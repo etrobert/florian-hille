@@ -21,27 +21,27 @@ section {
 
 #landing-section {
   background-color: #000;
-  background-image: url('microphone.jpg');
   background-position: right bottom;
   background-size: contain;
   background-repeat: no-repeat;
 
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   place-items: center;
 
   color: #e0e0e0;
 }
 
-#landing-section h1 {
-  margin-left: -7px;
-  font-size: 5rem;
-  font-family: 'JosefinSansLight', sans-serif;
+#landing-section img {
+  max-height: 100%;
+  width: 60%;
+  object-fit: contain;
+}
 
-  background-image: url('gold-texture.jpg');
-  background-clip: text;
-  background-size: cover;
-  color: rgba(0, 0, 0, 0);
+#landing-section h1 {
+  margin-left: -4px;
+  font-size: 5rem;
+  font-family: 'PoiretOne', sans-serif;
 }
 
 #landing-section p {
@@ -63,4 +63,9 @@ section {
 @font-face {
   font-family: 'JosefinSansLight';
   src: url('josefin-sans/JosefinSansLight-ZVEll.ttf');
+}
+
+@font-face {
+  font-family: 'PoiretOne';
+  src: url('poiret-one/PoiretOne-Regular.ttf');
 }
